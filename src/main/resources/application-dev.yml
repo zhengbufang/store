@@ -1,0 +1,19 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /boot
+
+
+bootbean:
+  ip: 127.0.0.1
+  url: jdbc:mysql://localhost:3306/th_report
+  username: th_r
+  password: 1232445
+
+spring:
+  redis:
+    host: 192.168.0.22
+    port: 6379
+
+
+

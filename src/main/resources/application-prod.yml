@@ -1,0 +1,16 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /boot
+
+bootbean:
+  ip: 192.168.0.42
+  url: jdbc:mysql://localhost:3309/th_box
+  username: th_rd
+  password: 1232445
+#eureka服务端应用的端口默认是8761 server.port=9000 #表示是否将自己注册到Eureka Server,默认为true,由于当前应用就是Eureka Server,故而设为false eureka.client.register-with-eureka=false # 表示是否从Eureka Server获取注册信息,默认为true,因为这是一个单点的Eureka Server,不需要同步其他的Eureka Server节点的数据,故而设为false eureka.client.fetch-registry=false #暴露给其他eureka client 的注册地址 eureka.client.service-url.defaultZone: http://localhost:9000/eureka/
+spring:
+  redis:
+    host: 192.168.0.22
+    port: 6379
+
